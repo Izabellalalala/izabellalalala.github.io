@@ -4,8 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>About Me | By Izabella</title>
-    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600&display=swap" rel="stylesheet">
-    <style>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
     :root{
         --forest:#355E3B;
         --cream:#F8F5EF;
@@ -25,35 +25,47 @@
     }
 
 header{
-    background:white;
-    padding:22px 8%;
-    display:flex;
-    justify-content:space-between;
-    align-items:center;
-    box-shadow:0 2px 12px rgba(0,0,0,.05);
+  background:white;
+  padding:22px 8%;
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  box-shadow:0 2px 12px rgba(0,0,0,.05);
 }
+
 .logo{
-    display:flex;
-    align-items:center;
-    gap:16px;
+  display:flex;
+  align-items:center;
+  gap:16px;
 }
+
 .logo svg{
-    width:48px;
-    height:48px;
+  width:48px;
+  height:48px;
 }
+
+.logo-text{
+  font-family:"Cormorant Garamond", serif;
+  color:var(--forest);
+  font-size:1.6rem;
+  letter-spacing:3px;
+}
+
 nav{
-    display:flex;
-    gap:30px;
+  display:flex;
+  gap:30px;
 }
+
 nav a{
-    text-decoration:none;
-    color:var(--forest);
-    font-size:0.95rem;
-    font-weight:500;
-    transition:all 0.3s ease;
+  text-decoration:none;
+  color:var(--forest);
+  font-size:0.95rem;
+  font-weight:500;
+  transition:all 0.3s ease;
 }
+
 nav a:hover{
-    color:var(--terracotta);
+  color:var(--terracotta);
 }
 
 .logo-text{
@@ -115,41 +127,27 @@ nav a:hover{
 <body>
 <header>
 
-    <a href="index.html" class="logo">
+<div class="logo">
 
-        <svg viewBox="0 0 140 140">
-            <path d="M30 80 L70 40 L110 80"
-                  fill="none"
-                  stroke="#355E3B"
-                  stroke-width="4"
-                  stroke-linecap="round"/>
+<svg viewBox="0 0 140 140">
+<path d="M30 80 L70 40 L110 80" fill="none" stroke="#355E3B" stroke-width="4" stroke-linecap="round"/>
+<path d="M70 40 L70 90" fill="none" stroke="#355E3B" stroke-width="4" stroke-linecap="round"/>
+<path d="M50 80 Q70 100 90 80" fill="none" stroke="#355E3B" stroke-width="4" stroke-linecap="round"/>
+</svg>
 
-            <path d="M70 40 L70 90"
-                  fill="none"
-                  stroke="#355E3B"
-                  stroke-width="4"
-                  stroke-linecap="round"/>
+<div class="logo-text">BY IZABELLA</div>
 
-            <path d="M50 80 Q70 100 90 80"
-                  fill="none"
-                  stroke="#355E3B"
-                  stroke-width="4"
-                  stroke-linecap="round"/>
-        </svg>
+</div>
 
-        <a href="index.html" class="logo-text">BY IZABELLA</a>
-
-    </a>
-
-    <nav>
-        <a href="index.html">Home</a>
-        <a href="outdoors.html">Outdoors</a>
-        <a href="kitchen.html">Kitchen</a>
-        <a href="printables.html">Printable Shop</a>
-        <a href="journal.html">Reflection Journal</a>
-        <a href="reviews.html">Reviews</a>
-        <a href="about.html">About Me</a>
-    </nav>
+<nav>
+    <a href="index.html">Home</a>
+    <a href="outdoors.html">Outdoors</a>
+    <a href="kitchen.html">Kitchen</a>
+    <a href="printables.html">Printable Shop</a>
+    <a href="journal.html">Reflection Journal</a>
+    <a href="reviews.html">Reviews</a>
+    <a href="about.html">About Me</a>
+</nav>
 
 </header>
 
@@ -169,3 +167,4 @@ nav a:hover{
 </footer>
 </body>
 </html>
+
