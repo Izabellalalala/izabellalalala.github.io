@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>About Me | By Izabella</title>
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600&display=swap">
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600&display=swap" rel="stylesheet">
     <style>
     :root{
         --forest:#355E3B;
@@ -23,18 +23,47 @@
         background:var(--cream);
         color:var(--text);
     }
-    header{
-        background:white;
-        padding:22px 8%;
-        box-shadow:0 2px 12px rgba(0,0,0,.05);
-    }
-    .logo-text{
-        font-family:"Cormorant Garamond", serif;
-        color:var(--forest);
-        font-size:1.6rem;
-        letter-spacing:3px;
-        text-decoration:none;
-    }
+
+header{
+    background:white;
+    padding:22px 8%;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    box-shadow:0 2px 12px rgba(0,0,0,.05);
+}
+.logo{
+    display:flex;
+    align-items:center;
+    gap:16px;
+}
+.logo svg{
+    width:48px;
+    height:48px;
+}
+nav{
+    display:flex;
+    gap:30px;
+}
+nav a{
+    text-decoration:none;
+    color:var(--forest);
+    font-size:0.95rem;
+    font-weight:500;
+    transition:all 0.3s ease;
+}
+nav a:hover{
+    color:var(--terracotta);
+}
+
+.logo-text{
+    font-family:"Cormorant Garamond", serif;
+    color:var(--forest);
+    font-size:1.6rem;
+    letter-spacing:3px;
+    text-decoration:none;
+}
+
     .about-section{
         max-width:900px;
         margin:auto;
@@ -86,7 +115,7 @@
 <body>
 <header>
 
-    <div class="logo">
+    <a href="index.html" class="logo">
 
         <svg viewBox="0 0 140 140">
             <path d="M30 80 L70 40 L110 80"
@@ -110,7 +139,7 @@
 
         <a href="index.html" class="logo-text">BY IZABELLA</a>
 
-    </div>
+    </a>
 
     <nav>
         <a href="index.html">Home</a>
