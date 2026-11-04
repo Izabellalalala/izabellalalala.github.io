@@ -56,11 +56,22 @@ header{
   letter-spacing:3px;
 }
 
+nav{
+    display:flex;
+    gap:30px;
+}
+
 nav a{
-  text-decoration:none;
-  color:#444;
-  margin-left:24px;
-  font-size:.95rem;
+    text-decoration:none;
+    color:var(--forest);
+    font-size:0.95rem;
+    font-weight:500;
+    transition:all 0.3s ease;
+    position:relative;
+}
+
+nav a:hover{
+    color:var(--terracotta);
 }
 
 .hero{
@@ -247,13 +258,13 @@ footer h3{
 </div>
 
 <nav>
-#Home</a>
-#Outdoors</a>
-#Kitchen</a>
-#Printable Shop</a>
-#Reflection Journal</a>
-#Reviews</a>
-#About me</a>
+<a href="index.html">Home</a>
+    <a href="outdoors.html">Outdoors</a>
+    <a href="kitchen.html">Kitchen</a>
+    <a href="printables.html">Printable Shop</a>
+    <a href="journal.html">Journal</a>
+    <a href="reviews.html">Reviews</a>
+    <a href="about.html">About Me</a>
 </nav>
 
 </header>
