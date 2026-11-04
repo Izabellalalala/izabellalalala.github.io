@@ -1,169 +1,106 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-<title>About Me | By Izabella</title>
-
-<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600&display=swap" rel="stylesheet">
-
-<style>
-
-:root{
-    --forest:#355E3B;
-    --cream:#F8F5EF;
-    --sand:#DCCFB8;
-    --terracotta:#C46C4D;
-    --text:#2E2E2E;
-}
-
-*{
-    margin:0;
-    padding:0;
-    box-sizing:border-box;
-}
-
-body{
-    font-family:Segoe UI,sans-serif;
-    background:var(--cream);
-    color:var(--text);
-}
-
-/* Header */
-
-header{
-    background:white;
-    padding:22px 8%;
-    display:flex;
-    justify-content:space-between;
-    align-items:center;
-    box-shadow:0 2px 12px rgba(0,0,0,.05);
-}
-
-.logo{
-    display:flex;
-    align-items:center;
-    gap:16px;
-}
-
-.logo-text{
-    font-family:"Cormorant Garamond", serif;
-    color:var(--forest);
-    font-size:1.6rem;
-    letter-spacing:3px;
-    text-decoration:none;
-}
-
-/* Page */
-
-.about-section{
-    min-height:75vh;
-    display:flex;
-    justify-content:center;
-    align-items:center;
-    padding:80px 10%;
-}
-
-.about-content{
-    max-width:800px;
-    text-align:center;
-}
-
-.about-label{
-    color:var(--terracotta);
-    letter-spacing:3px;
-    font-size:0.8rem;
-    margin-bottom:15px;
-}
-
-.about-content h1{
-    font-family:"Cormorant Garamond", serif;
-    color:var(--forest);
-    font-size:4rem;
-    margin-bottom:30px;
-}
-
-.about-content p{
-    font-size:1.2rem;
-    line-height:1.9;
-}
-
-/* Button */
-
-.home-link{
-    display:inline-block;
-    margin-top:40px;
-    padding:14px 30px;
-    text-decoration:none;
-    background:var(--forest);
-    color:white;
-    border-radius:40px;
-}
-
-.home-link:hover{
-    opacity:0.9;
-}
-
-/* Footer */
-
-footer{
-    background:var(--forest);
-    color:white;
-    text-align:center;
-    padding:50px 20px;
-}
-
-footer h3{
-    font-family:"Cormorant Garamond", serif;
-    font-size:2rem;
-    margin-bottom:10px;
-}
-
-</style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Me | By Izabella</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600&display=swap">
+    <style>
+    :root{
+        --forest:#355E3B;
+        --cream:#F8F5EF;
+        --sand:#DCCFB8;
+        --terracotta:#C46C4D;
+        --text:#2E2E2E;
+    }
+    *{
+        margin:0;
+        padding:0;
+        box-sizing:border-box;
+    }
+    body{
+        font-family:Segoe UI, sans-serif;
+        background:var(--cream);
+        color:var(--text);
+    }
+    header{
+        background:white;
+        padding:22px 8%;
+        box-shadow:0 2px 12px rgba(0,0,0,.05);
+    }
+    .logo-text{
+        font-family:"Cormorant Garamond", serif;
+        color:var(--forest);
+        font-size:1.6rem;
+        letter-spacing:3px;
+        text-decoration:none;
+    }
+    .about-section{
+        max-width:900px;
+        margin:auto;
+        padding:120px 10%;
+        text-align:center;
+        min-height:70vh;
+    }
+    .about-label{
+        color:var(--terracotta);
+        letter-spacing:3px;
+        font-size:.85rem;
+        margin-bottom:15px;
+    }
+    h1{
+        font-family:"Cormorant Garamond", serif;
+        color:var(--forest);
+        font-size:4rem;
+        margin-bottom:40px;
+    }
+    .intro{
+        font-size:1.2rem;
+        line-height:1.9;
+    }
+    .button{
+        display:inline-block;
+        margin-top:40px;
+        padding:14px 28px;
+        background:var(--forest);
+        color:white;
+        text-decoration:none;
+        border-radius:40px;
+    }
+    .button:hover{
+        opacity:.9;
+    }
+    footer{
+        background:var(--forest);
+        color:white;
+        text-align:center;
+        padding:50px 20px;
+    }
+    footer h3{
+        font-family:"Cormorant Garamond", serif;
+        font-size:2rem;
+        margin-bottom:10px;
+    }
+    </style>
 </head>
-
 <body>
-
 <header>
-
-    <div class="logo">
-        <a href="index.html" class="logo-text">
-            BY IZABELLA
-        </a>
-    </div>
-
+    <a href="index.html" class="logo-text">BY IZABELLA</a>
 </header>
-
 <section class="about-section">
-
-    <div class="about-content">
-
-        <div class="about-label">ABOUT ME</div>
-
-        <h1>Hello</h1>
-
-        <p>
-            Hi, my name is Izabella.
-        </p>
-
-        <a href="index.html" class="home-link">
-            Back to Home
-        </a>
-
-    </div>
-
-</section>
-
-<footer>
-
-    <h3>By Izabella</h3>
-
-    <p>
-        Outdoor adventures, practical tools, and thoughtful living.
+    <div class="about-label">ABOUT ME</div>
+    <h1>Hello</h1>
+    <p class="intro">
+        Hi, my name is Izabella.
     </p>
-
+    <a href="index.html" class="button">
+        Back to Home
+    </a>
+</section>
+<footer>
+    <h3>By Izabella</h3>
+    <p>Outdoor adventures, practical tools, and thoughtful living.</p>
 </footer>
-
 </body>
 </html>
+
