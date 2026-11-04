@@ -5,7 +5,10 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>By Izabella</title>
 
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600&display=swap" rel="stylesheet">
+
 <style>
+
 :root{
   --forest:#355E3B;
   --cream:#F8F5EF;
@@ -21,7 +24,7 @@
 }
 
 body{
-  font-family:Segoe UI,sans-serif;
+  font-family:Segoe UI, sans-serif;
   background:var(--cream);
   color:var(--text);
 }
@@ -47,7 +50,7 @@ header{
 }
 
 .logo-text{
-  font-family:"Cormorant Garamond",serif;
+  font-family:"Cormorant Garamond", serif;
   color:var(--forest);
   font-size:1.6rem;
   letter-spacing:3px;
@@ -78,7 +81,7 @@ nav a{
 }
 
 .hero-logo svg{
-  width:150px;
+  width:180px;
   height:auto;
 }
 
@@ -128,7 +131,34 @@ h1{
 }
 
 .section{
-  padding:80px 10%;
+  padding:100px 10%;
+}
+
+.section-header{
+  text-align:center;
+  max-width:700px;
+  margin:0 auto 60px;
+}
+
+.section-label{
+  display:block;
+  letter-spacing:3px;
+  color:var(--terracotta);
+  font-size:0.8rem;
+  font-weight:600;
+  margin-bottom:10px;
+}
+
+.section-header h2{
+  font-family:"Cormorant Garamond", serif;
+  font-size:3rem;
+  color:var(--forest);
+  margin-bottom:15px;
+}
+
+.section-header p{
+  color:#666;
+  line-height:1.8;
 }
 
 .cards{
@@ -139,17 +169,67 @@ h1{
 
 .card{
   background:white;
-  padding:28px;
-  border-radius:18px;
+  padding:35px;
+  border-radius:20px;
+  box-shadow:0 8px 20px rgba(0,0,0,.05);
+  transition:.3s ease;
 }
 
-.section h2{
+.card:hover{
+  transform:translateY(-5px);
+}
+
+.card h3{
+  color:var(--forest);
+  margin-bottom:12px;
+}
+
+.card p{
+  color:#666;
+}
+
+.reflection{
+  background:var(--sand);
   text-align:center;
-  margin-bottom:40px;
+  padding:120px 10%;
+}
+
+.reflection h2{
+  font-family:"Cormorant Garamond", serif;
+  font-size:3.5rem;
+  color:var(--forest);
+  margin-bottom:20px;
+}
+
+.quote{
+  font-family:"Cormorant Garamond", serif;
+  font-size:2.4rem;
   color:var(--forest);
 }
+
+.reflection-text{
+  max-width:650px;
+  margin:25px auto 0;
+  color:#555;
+  line-height:1.8;
+}
+
+footer{
+  background:var(--forest);
+  color:white;
+  text-align:center;
+  padding:60px 20px;
+}
+
+footer h3{
+  font-family:"Cormorant Garamond", serif;
+  font-size:2rem;
+  margin-bottom:10px;
+}
+
 </style>
 </head>
+
 <body>
 
 <header>
@@ -157,28 +237,9 @@ h1{
 <div class="logo">
 
 <svg viewBox="0 0 140 140">
-
-<path
-d="M30 80 L70 40 L110 80"
-fill="none"
-stroke="#355E3B"
-stroke-width="4"
-stroke-linecap="round"/>
-
-<path
-d="M70 40 L70 90"
-fill="none"
-stroke="#355E3B"
-stroke-width="4"
-stroke-linecap="round"/>
-
-<path
-d="M50 80 Q70 100 90 80"
-fill="none"
-stroke="#355E3B"
-stroke-width="4"
-stroke-linecap="round"/>
-
+<path d="M30 80 L70 40 L110 80" fill="none" stroke="#355E3B" stroke-width="4" stroke-linecap="round"/>
+<path d="M70 40 L70 90" fill="none" stroke="#355E3B" stroke-width="4" stroke-linecap="round"/>
+<path d="M50 80 Q70 100 90 80" fill="none" stroke="#355E3B" stroke-width="4" stroke-linecap="round"/>
 </svg>
 
 <div class="logo-text">BY IZABELLA</div>
@@ -186,11 +247,11 @@ stroke-linecap="round"/>
 </div>
 
 <nav>
-#Outdoors</a>
-#Kitchen</a>
-#Printables</a>
-#Reflection</a>
-#Reviews</a>
+<a href="#">Outdoors</a>
+<a href="#">Kitchen</a>
+<a href="#">Printables</a>
+<a href="#">Reflection</a>
+<a href="#">Reviews</a>
 </nav>
 
 </header>
@@ -202,28 +263,9 @@ stroke-linecap="round"/>
 <div class="hero-logo">
 
 <svg viewBox="0 0 200 200">
-
-<path
-d="M50 110 L100 60 L150 110"
-fill="none"
-stroke="#355E3B"
-stroke-width="5"
-stroke-linecap="round"/>
-
-<path
-d="M100 60 L100 125"
-fill="none"
-stroke="#355E3B"
-stroke-width="5"
-stroke-linecap="round"/>
-
-<path
-d="M75 110 Q100 135 125 110"
-fill="none"
-stroke="#355E3B"
-stroke-width="5"
-stroke-linecap="round"/>
-
+<path d="M50 110 L100 60 L150 110" fill="none" stroke="#355E3B" stroke-width="5" stroke-linecap="round"/>
+<path d="M100 60 L100 125" fill="none" stroke="#355E3B" stroke-width="5" stroke-linecap="round"/>
+<path d="M75 110 Q100 135 125 110" fill="none" stroke="#355E3B" stroke-width="5" stroke-linecap="round"/>
 </svg>
 
 </div>
@@ -235,21 +277,25 @@ Outdoor adventures, practical tools, and thoughtful living.
 </div>
 
 <div class="intro">
-Hi, I'm Izabella. Here you'll find hiking adventures, via ferrata experiences,
-cycling trips, homemade recipes, practical printables, honest reviews,
-and reflections designed to help create a richer and more intentional life.
+Hi, I'm Izabella. Here you'll find hiking adventures, via ferrata experiences, cycling trips, homemade recipes, practical printables, honest reviews, and reflections designed to help create a richer and more intentional life.
 </div>
 
 <div class="buttons">
-#Explore Articles</a>
-#Visit the Shop</a>
+<a href="#" class="btn primary">Explore Articles</a>
+<a href="#" class="btn secondary">Visit the Shop</a>
+</div>
+
 </div>
 
 </section>
 
-<section>
+<section class="section">
 
-<h2 class="section-title">Outdoor Adventures</h2>
+<div class="section-header">
+<span class="section-label">OUTDOORS</span>
+<h2>Outdoor Adventures</h2>
+<p>Mountains, trails, ferratas and cycling routes. Experiences, advice and inspiration from the outdoors.</p>
+</div>
 
 <div class="cards">
 
@@ -272,9 +318,13 @@ and reflections designed to help create a richer and more intentional life.
 
 </section>
 
-<section>
+<section class="section">
 
-<h2 class="section-title">Kitchen & Baking</h2>
+<div class="section-header">
+<span class="section-label">KITCHEN & BAKING</span>
+<h2>Food Made With Joy</h2>
+<p>Everyday meals, family favourites and original creations.</p>
+</div>
 
 <div class="cards">
 
@@ -294,27 +344,21 @@ and reflections designed to help create a richer and more intentional life.
 </div>
 
 <div class="card">
-<h3>🎂 Cakes</h3>
-<p>Traditional favourites and celebration cakes.</p>
-</div>
-
-<div class="card">
-<h3>🇭🇺 Traditional Recipes</h3>
-<p>Family recipes and Hungarian classics.</p>
-</div>
-
-<div class="card">
-<h3>✨ My Inventions</h3>
-<p>Original recipes created and tested by Izabella.</p>
+<h3>🎂 Baking</h3>
+<p>Cakes, traditions and original creations.</p>
 </div>
 
 </div>
 
 </section>
 
-<section>
+<section class="section">
 
-<h2 class="section-title">Printable Shop</h2>
+<div class="section-header">
+<span class="section-label">PRINTABLE SHOP</span>
+<h2>Practical Tools</h2>
+<p>Templates and resources to make life simpler and more organized.</p>
+</div>
 
 <div class="cards">
 
@@ -327,19 +371,11 @@ and reflections designed to help create a richer and more intentional life.
 </div>
 
 <div class="card">
-<h3>📅 Weekly Planners</h3>
+<h3>📅 Planners</h3>
 </div>
 
 <div class="card">
-<h3>🎒 Hiking Checklists</h3>
-</div>
-
-<div class="card">
-<h3>🎯 Goal Planners</h3>
-</div>
-
-<div class="card">
-<h3>📚 Reflection Worksheets</h3>
+<h3>🎒 Hiking Tools</h3>
 </div>
 
 </div>
@@ -348,21 +384,27 @@ and reflections designed to help create a richer and more intentional life.
 
 <section class="reflection">
 
-<h2>Reflection Journal</h2>
+<span class="section-label">REFLECTION JOURNAL</span>
+
+<h2>Where am I right now?</h2>
 
 <div class="quote">
-"Where am I right now?"
+A question. A picture. A new perspective.
 </div>
 
-<p style="margin-top:20px;">
-Every few days, a question, a picture and a new perspective.
+<p class="reflection-text">
+Every few days, a photograph and a thought-provoking question designed to help us pause, reflect and look at life differently.
 </p>
 
 </section>
 
-<section>
+<section class="section">
 
-<h2 class="section-title">Reviews</h2>
+<div class="section-header">
+<span class="section-label">REVIEWS</span>
+<h2>Thoughts & Reviews</h2>
+<p>Honest impressions, recommendations and reflections.</p>
+</div>
 
 <div class="cards">
 
@@ -391,9 +433,11 @@ Every few days, a question, a picture and a new perspective.
 </section>
 
 <footer>
-
 <h3>By Izabella</h3>
-<p>Outdoor adventures, practical tools, and thoughtful living.</p>
+
+<p>
+Outdoor adventures, practical tools, and thoughtful living.
+</p>
 
 </footer>
 
