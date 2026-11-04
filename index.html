@@ -78,53 +78,93 @@ url('https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?auto=format&fi
     background-position:center;
     color:white;
 }
-
 .hero-content{
-    max-width:800px;
+  max-width:850px;
 }
 
-.hero h1{
-    font-size:4rem;
-    margin-bottom:20px;
+.hero-logo{
+  margin-bottom:30px;
 }
 
-.hero .tagline{
-    font-size:1.4rem;
-    margin-bottom:25px;
+.hero-logo svg{
+  width:180px;
+  height:auto;
 }
 
-.hero p{
-    font-size:1.1rem;
-    margin-bottom:35px;
+h1{
+  font-family:"Cormorant Garamond", serif;
+  font-size:4rem;
+  color:var(--forest);
+  letter-spacing:5px;
+  margin-bottom:15px;
+}
+
+.tagline{
+  font-size:1.2rem;
+  color:#666;
+  margin-bottom:35px;
+}
+
+.intro{
+  font-size:1.1rem;
+  line-height:1.8;
+  max-width:750px;
+  margin:auto;
+}
+
+.buttons{
+  margin-top:40px;
 }
 
 .btn{
-    display:inline-block;
-    padding:14px 28px;
-    border-radius:50px;
-    text-decoration:none;
-    font-weight:600;
-    margin:5px;
+  display:inline-block;
+  padding:14px 28px;
+  border-radius:40px;
+  text-decoration:none;
+  margin:5px;
+  font-weight:600;
 }
 
-.btn-primary{
-    background:var(--terracotta);
-    color:white;
+.primary{
+  background:var(--forest);
+  color:white;
 }
 
-.btn-secondary{
-    background:white;
-    color:var(--forest);
+.secondary{
+  background:white;
+  border:1px solid var(--forest);
+  color:var(--forest);
 }
 
-section{
-    padding:80px 10%;
+.section{
+  padding:100px 10%;
 }
 
-.section-title{
-    text-align:center;
-    margin-bottom:40px;
-    color:var(--forest);
+.section-header{
+  text-align:center;
+  max-width:700px;
+  margin:0 auto 60px;
+}
+
+.section-label{
+  display:block;
+  letter-spacing:3px;
+  color:var(--terracotta);
+  font-size:0.8rem;
+  font-weight:600;
+  margin-bottom:10px;
+}
+
+.section-header h2{
+  font-family:"Cormorant Garamond", serif;
+  font-size:3rem;
+  color:var(--forest);
+  margin-bottom:15px;
+}
+
+.section-header p{
+  color:#666;
+  line-height:1.8;
 }
 
 .cards{
@@ -179,18 +219,18 @@ footer{
 <path d="M50 80 L50 45" stroke="#355E3B" stroke-width="4"/>
 </svg>
 
-<span>By Izabella</span>
+<div class="logo-text">BY IZABELLA</div>
 
 </div>
 
 <nav>
-#Home</a>
-#Outdoors</a>
-#Kitchen</a>
-#Printable Shop</a>
-#Reflection Journal</a>
-#Reviews</a>
-#About me</a>
+<a href="#">Home</a>
+<a href="#">Outdoors</a>
+<a href="#">Kitchen</a>
+<a href="#">Printable Shop</a>
+<a href="#">Reflection Journal</a>
+<a href="#">Reviews</a>
+<a href="#">About me</a>
 </nav>
 
 </header>
