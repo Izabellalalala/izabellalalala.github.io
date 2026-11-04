@@ -1,99 +1,283 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-<title>Izabella Lalalala</title>
- 
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>By Izabella</title>
+
 <style>
-body {
-background-color: #f5f0ea;
-font-family: Georgia, serif;
-color: #5c4033;
-max-width: 900px;
-margin: auto;
-padding: 40px;
-line-height: 1.8;
+:root{
+  --forest:#355E3B;
+  --cream:#F8F5EF;
+  --sand:#DCCFB8;
+  --terracotta:#C46C4D;
+  --text:#2E2E2E;
 }
- 
-h1 {
-color: #7a4e32;
-font-size: 3em;
-text-align: center;
+
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
 }
- 
-.subtitle {
-text-align: center;
-font-size: 1.2em;
-margin-bottom: 40px;
+
+body{
+  font-family:Segoe UI,sans-serif;
+  background:var(--cream);
+  color:var(--text);
 }
- 
-.menu {
-text-align: center;
-margin-bottom: 40px;
+
+header{
+  background:white;
+  padding:22px 8%;
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  box-shadow:0 2px 12px rgba(0,0,0,.05);
 }
- 
-.menu span {
-display: inline-block;
-margin: 10px 15px;
-font-weight: bold;
-color: #8b5a3c;
-font-size: 1.1em;
+
+.logo{
+  display:flex;
+  align-items:center;
+  gap:16px;
 }
- 
-.card {
-background: white;
-padding: 30px;
-border-radius: 15px;
-box-shadow: 0px 4px 12px rgba(0,0,0,0.08);
- 
-width: 80%;
-margin: 0 auto;
+
+.logo svg{
+  width:48px;
+  height:48px;
 }
- 
-h2 {
-color: #7a4e32;
-text-align: center;
+
+.logo-text{
+  font-family:"Cormorant Garamond",serif;
+  color:var(--forest);
+  font-size:1.6rem;
+  letter-spacing:3px;
 }
- 
-h2 {
-color: #7a4e32;
+
+nav a{
+  text-decoration:none;
+  color:#444;
+  margin-left:24px;
+  font-size:.95rem;
+}
+
+.hero{
+  min-height:85vh;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  text-align:center;
+  padding:60px 10%;
+}
+
+.hero-content{
+  max-width:850px;
+}
+
+.hero-logo{
+  margin-bottom:30px;
+}
+
+.hero-logo svg{
+  width:150px;
+  height:auto;
+}
+
+h1{
+  font-family:"Cormorant Garamond", serif;
+  font-size:4rem;
+  color:var(--forest);
+  letter-spacing:5px;
+  margin-bottom:15px;
+}
+
+.tagline{
+  font-size:1.2rem;
+  color:#666;
+  margin-bottom:35px;
+}
+
+.intro{
+  font-size:1.1rem;
+  line-height:1.8;
+  max-width:750px;
+  margin:auto;
+}
+
+.buttons{
+  margin-top:40px;
+}
+
+.btn{
+  display:inline-block;
+  padding:14px 28px;
+  border-radius:40px;
+  text-decoration:none;
+  margin:5px;
+  font-weight:600;
+}
+
+.primary{
+  background:var(--forest);
+  color:white;
+}
+
+.secondary{
+  background:white;
+  border:1px solid var(--forest);
+  color:var(--forest);
+}
+
+.section{
+  padding:80px 10%;
+}
+
+.cards{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+  gap:24px;
+}
+
+.card{
+  background:white;
+  padding:28px;
+  border-radius:18px;
+}
+
+.section h2{
+  text-align:center;
+  margin-bottom:40px;
+  color:var(--forest);
 }
 </style>
 </head>
- 
 <body>
- 
-<h1>🌿 Izabella Lalalala</h1>
- 
-<p class="subtitle">
-My little corner of the internet
-</p>
- 
-<div class="menu">
-<span>🍰 Baking</span>
-<span>🍲 Cooking</span>
-<span>🥾 Hiking</span>
-<span>🪴 Plants</span>
-<span>✨ Projects</span>
+
+<header>
+
+<div class="logo">
+
+<svg viewBox="0 0 140 140">
+
+<path
+d="M30 80 L70 40 L110 80"
+fill="none"
+stroke="#355E3B"
+stroke-width="4"
+stroke-linecap="round"/>
+
+<path
+d="M70 40 L70 90"
+fill="none"
+stroke="#355E3B"
+stroke-width="4"
+stroke-linecap="round"/>
+
+<path
+d="M50 80 Q70 100 90 80"
+fill="none"
+stroke="#355E3B"
+stroke-width="4"
+stroke-linecap="round"/>
+
+</svg>
+
+<div class="logo-text">BY IZABELLA</div>
+
 </div>
- 
+
+<nav>
+#Outdoors</a>
+#Kitchen</a>
+#Printables</a>
+#Reflection</a>
+#Reviews</a>
+</nav>
+
+</header>
+
+<section class="hero">
+
+<div class="hero-content">
+
+<div class="hero-logo">
+
+<svg viewBox="0 0 200 200">
+
+<path
+d="M50 110 L100 60 L150 110"
+fill="none"
+stroke="#355E3B"
+stroke-width="5"
+stroke-linecap="round"/>
+
+<path
+d="M100 60 L100 125"
+fill="none"
+stroke="#355E3B"
+stroke-width="5"
+stroke-linecap="round"/>
+
+<path
+d="M75 110 Q100 135 125 110"
+fill="none"
+stroke="#355E3B"
+stroke-width="5"
+stroke-linecap="round"/>
+
+</svg>
+
+</div>
+
+<h1>BY IZABELLA</h1>
+
+<div class="tagline">
+Outdoor adventures, practical tools, and thoughtful living.
+</div>
+
+<div class="intro">
+Hi, I'm Izabella. Here you'll find hiking adventures, via ferrata experiences,
+cycling trips, homemade recipes, practical printables, honest reviews,
+and reflections designed to help create a richer and more intentional life.
+</div>
+
+<div class="buttons">
+#Explore Articles</a>
+#Visit the Shop</a>
+</div>
+
+</div>
+
+</section>
+
+<section class="section">
+
+<h2>Explore</h2>
+
+<div class="cards">
+
 <div class="card">
-<h2>Welcome!</h2>
- 
-<p>
-Hello and welcome to my website.
-</p>
- 
-<p>
-This is where I share baking experiments, cooking ideas,
-hiking adventures, plants, creative projects and
-whatever else catches my imagination.
-</p>
- 
-<p>
-The site is still under construction, but more content
-will be added soon.
-</p>
+<h3>🌲 Outdoors</h3>
+<p>Hiking, via ferrata and cycling adventures.</p>
 </div>
- 
+
+<div class="card">
+<h3>🍰 Kitchen & Baking</h3>
+<p>Breakfasts, lunches, dinners, snacks and cakes.</p>
+</div>
+
+<div class="card">
+<h3>📋 Printable Shop</h3>
+<p>CV templates, planners, trackers and journals.</p>
+</div>
+
+<div class="card">
+<h3>🌱 Reflection Journal</h3>
+<p>A question, an image and a new perspective.</p>
+</div>
+
+</div>
+
+</section>
+
 </body>
 </html>
