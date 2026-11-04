@@ -5,253 +5,191 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>By Izabella</title>
 
-<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600&display=swap" rel="stylesheet">
-
 <style>
-
 :root{
-  --forest:#355E3B;
-  --cream:#F8F5EF;
-  --sand:#DCCFB8;
-  --terracotta:#C46C4D;
-  --text:#2E2E2E;
+    --forest:#355E3B;
+    --cream:#F8F5EF;
+    --sand:#DCCFB8;
+    --terracotta:#C46C4D;
+    --text:#2f2f2f;
 }
 
 *{
-  margin:0;
-  padding:0;
-  box-sizing:border-box;
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
 }
 
 body{
-  font-family:Segoe UI, sans-serif;
-  background:var(--cream);
-  color:var(--text);
+    font-family: "Segoe UI", sans-serif;
+    background:var(--cream);
+    color:var(--text);
+    line-height:1.6;
 }
 
 header{
-  background:white;
-  padding:22px 8%;
-  display:flex;
-  justify-content:space-between;
-  align-items:center;
-  box-shadow:0 2px 12px rgba(0,0,0,.05);
+    background:white;
+    padding:20px 8%;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    position:sticky;
+    top:0;
+    box-shadow:0 2px 10px rgba(0,0,0,0.05);
 }
 
 .logo{
-  display:flex;
-  align-items:center;
-  gap:16px;
+    display:flex;
+    align-items:center;
+    gap:12px;
+    font-weight:600;
+    font-size:1.3rem;
+    color:var(--forest);
 }
 
 .logo svg{
-  width:48px;
-  height:48px;
-}
-
-.logo-text{
-  font-family:"Cormorant Garamond", serif;
-  color:var(--forest);
-  font-size:1.6rem;
-  letter-spacing:3px;
+    width:40px;
+    height:40px;
 }
 
 nav a{
-  text-decoration:none;
-  color:#444;
-  margin-left:24px;
-  font-size:.95rem;
+    text-decoration:none;
+    color:var(--text);
+    margin-left:24px;
+    font-weight:500;
+}
+
+nav a:hover{
+    color:var(--forest);
 }
 
 .hero{
-  min-height:85vh;
-  display:flex;
-  justify-content:center;
-  align-items:center;
-  text-align:center;
-  padding:60px 10%;
+    min-height:80vh;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    text-align:center;
+    padding:60px 10%;
+    background:
+    linear-gradient(rgba(53,94,59,.55),rgba(53,94,59,.55)),
+    url('https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?auto=format&fit=crop&w=1600&q=80');
+    background-size:cover;
+    background-position:center;
+    color:white;
 }
 
 .hero-content{
-  max-width:850px;
+    max-width:800px;
 }
 
-.hero-logo{
-  margin-bottom:30px;
+.hero h1{
+    font-size:4rem;
+    margin-bottom:20px;
 }
 
-.hero-logo svg{
-  width:180px;
-  height:auto;
+.hero .tagline{
+    font-size:1.4rem;
+    margin-bottom:25px;
 }
 
-h1{
-  font-family:"Cormorant Garamond", serif;
-  font-size:4rem;
-  color:var(--forest);
-  letter-spacing:5px;
-  margin-bottom:15px;
-}
-
-.tagline{
-  font-size:1.2rem;
-  color:#666;
-  margin-bottom:35px;
-}
-
-.intro{
-  font-size:1.1rem;
-  line-height:1.8;
-  max-width:750px;
-  margin:auto;
-}
-
-.buttons{
-  margin-top:40px;
+.hero p{
+    font-size:1.1rem;
+    margin-bottom:35px;
 }
 
 .btn{
-  display:inline-block;
-  padding:14px 28px;
-  border-radius:40px;
-  text-decoration:none;
-  margin:5px;
-  font-weight:600;
+    display:inline-block;
+    padding:14px 28px;
+    border-radius:50px;
+    text-decoration:none;
+    font-weight:600;
+    margin:5px;
 }
 
-.primary{
-  background:var(--forest);
-  color:white;
+.btn-primary{
+    background:var(--terracotta);
+    color:white;
 }
 
-.secondary{
-  background:white;
-  border:1px solid var(--forest);
-  color:var(--forest);
+.btn-secondary{
+    background:white;
+    color:var(--forest);
 }
 
-.section{
-  padding:100px 10%;
+section{
+    padding:80px 10%;
 }
 
-.section-header{
-  text-align:center;
-  max-width:700px;
-  margin:0 auto 60px;
-}
-
-.section-label{
-  display:block;
-  letter-spacing:3px;
-  color:var(--terracotta);
-  font-size:0.8rem;
-  font-weight:600;
-  margin-bottom:10px;
-}
-
-.section-header h2{
-  font-family:"Cormorant Garamond", serif;
-  font-size:3rem;
-  color:var(--forest);
-  margin-bottom:15px;
-}
-
-.section-header p{
-  color:#666;
-  line-height:1.8;
+.section-title{
+    text-align:center;
+    margin-bottom:40px;
+    color:var(--forest);
 }
 
 .cards{
-  display:grid;
-  grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
-  gap:24px;
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:30px;
 }
 
 .card{
-  background:white;
-  padding:35px;
-  border-radius:20px;
-  box-shadow:0 8px 20px rgba(0,0,0,.05);
-  transition:.3s ease;
-}
-
-.card:hover{
-  transform:translateY(-5px);
+    background:white;
+    padding:30px;
+    border-radius:20px;
+    box-shadow:0 4px 15px rgba(0,0,0,.08);
 }
 
 .card h3{
-  color:var(--forest);
-  margin-bottom:12px;
-}
-
-.card p{
-  color:#666;
+    color:var(--forest);
+    margin-bottom:10px;
 }
 
 .reflection{
-  background:var(--sand);
-  text-align:center;
-  padding:120px 10%;
+    background:var(--sand);
+    text-align:center;
 }
 
 .reflection h2{
-  font-family:"Cormorant Garamond", serif;
-  font-size:3.5rem;
-  color:var(--forest);
-  margin-bottom:20px;
+    color:var(--forest);
+    margin-bottom:20px;
 }
 
 .quote{
-  font-family:"Cormorant Garamond", serif;
-  font-size:2.4rem;
-  color:var(--forest);
-}
-
-.reflection-text{
-  max-width:650px;
-  margin:25px auto 0;
-  color:#555;
-  line-height:1.8;
+    font-size:1.8rem;
+    font-style:italic;
 }
 
 footer{
-  background:var(--forest);
-  color:white;
-  text-align:center;
-  padding:60px 20px;
+    background:var(--forest);
+    color:white;
+    text-align:center;
+    padding:40px;
 }
-
-footer h3{
-  font-family:"Cormorant Garamond", serif;
-  font-size:2rem;
-  margin-bottom:10px;
-}
-
 </style>
 </head>
-
 <body>
 
 <header>
 
 <div class="logo">
 
-<svg viewBox="0 0 140 140">
-<path d="M30 80 L70 40 L110 80" fill="none" stroke="#355E3B" stroke-width="4" stroke-linecap="round"/>
-<path d="M70 40 L70 90" fill="none" stroke="#355E3B" stroke-width="4" stroke-linecap="round"/>
-<path d="M50 80 Q70 100 90 80" fill="none" stroke="#355E3B" stroke-width="4" stroke-linecap="round"/>
+<svg viewBox="0 0 100 100">
+<path d="M20 80 L50 25 L80 80" stroke="#355E3B" stroke-width="6" fill="none"/>
+<path d="M50 80 L50 45" stroke="#355E3B" stroke-width="4"/>
 </svg>
 
-<div class="logo-text">BY IZABELLA</div>
+<span>By Izabella</span>
 
 </div>
 
 <nav>
-<a href="#">Outdoors</a>
-<a href="#">Kitchen</a>
-<a href="#">Printables</a>
-<a href="#">Reflection</a>
-<a href="#">Reviews</a>
+#Home</a>
+#Outdoors</a>
+#Kitchen</a>
+#Printable Shop</a>
+#Reflection Journal</a>
+#Reviews</a>
+#About me</a>
 </nav>
 
 </header>
@@ -260,122 +198,113 @@ footer h3{
 
 <div class="hero-content">
 
-<div class="hero-logo">
-
-<svg viewBox="0 0 200 200">
-<path d="M50 110 L100 60 L150 110" fill="none" stroke="#355E3B" stroke-width="5" stroke-linecap="round"/>
-<path d="M100 60 L100 125" fill="none" stroke="#355E3B" stroke-width="5" stroke-linecap="round"/>
-<path d="M75 110 Q100 135 125 110" fill="none" stroke="#355E3B" stroke-width="5" stroke-linecap="round"/>
-</svg>
-
-</div>
-
-<h1>BY IZABELLA</h1>
+<h1>By Izabella</h1>
 
 <div class="tagline">
 Outdoor adventures, practical tools, and thoughtful living.
 </div>
 
-<div class="intro">
-Hi, I'm Izabella. Here you'll find hiking adventures, via ferrata experiences, cycling trips, homemade recipes, practical printables, honest reviews, and reflections designed to help create a richer and more intentional life.
-</div>
+<p>
+A place where nature, organization, creativity, and self-reflection meet.
+Here you'll find hiking adventures, via ferrata experiences, cycling trips, homemade recipes, practical Printable Shop, honest reviews, and reflections designed to help create a richer and more intentional life.
+</p>
 
-<div class="buttons">
-<a href="#" class="btn primary">Explore Articles</a>
-<a href="#" class="btn secondary">Visit the Shop</a>
-</div>
+#Explore Articles</a>
+#Visit the Shop</a>
 
 </div>
 
 </section>
 
-<section class="section">
+<section>
 
-<div class="section-header">
-<span class="section-label">OUTDOORS</span>
-<h2>Outdoor Adventures</h2>
-<p>Mountains, trails, ferratas and cycling routes. Experiences, advice and inspiration from the outdoors.</p>
-</div>
+<h2 class="section-title">Outdoor Adventures</h2>
 
 <div class="cards">
 
 <div class="card">
 <h3>🥾 Hiking</h3>
-<p>Trail guides, packing lists, route ideas and experiences.</p>
+<p>Trails, route ideas and experiences.</p>
 </div>
 
 <div class="card">
 <h3>🧗 Via Ferrata</h3>
-<p>Beginner guides, equipment reviews and route descriptions.</p>
+<p>Beginner guides, route descriptions, my experience and opinion.</p>
 </div>
 
 <div class="card">
 <h3>🚴 Cycling</h3>
-<p>Bike trips, inspiration and practical advice.</p>
+<p>Bike trips, my further plans and whatever cycling related.</p>
 </div>
 
 </div>
 
 </section>
 
-<section class="section">
+<section>
 
-<div class="section-header">
-<span class="section-label">KITCHEN & BAKING</span>
-<h2>Food Made With Joy</h2>
-<p>Everyday meals, family favourites and original creations.</p>
-</div>
+<h2 class="section-title">Kitchen & Baking</h2>
 
 <div class="cards">
 
 <div class="card">
 <h3>🍳 Breakfast</h3>
-<p>Simple and healthy ideas to start the day.</p>
+<p>An attempt to teach myself to prepare it in advance </p>
 </div>
 
 <div class="card">
 <h3>🥗 Lunch & Dinner</h3>
-<p>Practical meals for busy everyday life.</p>
+<p>Recipes I like and hopefully are not that calorific</p>
 </div>
 
 <div class="card">
 <h3>🍪 Snacks</h3>
-<p>Quick bites for home, work or the trail.</p>
+<p>For the outdoors</p>
 </div>
 
 <div class="card">
-<h3>🎂 Baking</h3>
-<p>Cakes, traditions and original creations.</p>
+<h3>🎂 Cakes</h3>
+<p>Staples of every kitchen, cake equals love</p>
+</div>
+
+<div class="card">
+<h3>🇭🇺 Traditional Recipes</h3>
+<p>Family recipes and Hungarian classics.</p>
+</div>
+
+<div class="card">
+<h3>✨ My Inventions</h3>
+<p>Original recipes created and tested by Izabella.</p>
 </div>
 
 </div>
 
 </section>
 
-<section class="section">
+<section>
 
-<div class="section-header">
-<span class="section-label">PRINTABLE SHOP</span>
-<h2>Practical Tools</h2>
-<p>Templates and resources to make life simpler and more organized.</p>
-</div>
+<h2 class="section-title">Printable Shop</h2>
 
 <div class="cards">
 
 <div class="card">
-<h3>📄 CV Templates</h3>
+<h3>📄 Career</h3>
+<p> CV templates and cover letters </p>
 </div>
 
 <div class="card">
-<h3>✅ Habit Trackers</h3>
+<h3>✅ Organization</h3>
+<p> Weekly planners, monthly planners, to-do lists</p>
 </div>
 
 <div class="card">
-<h3>📅 Planners</h3>
+<h3>📅 Self-Development</h3>
+<p> Habit trackers, goal planners, reflection worksheets</p>
 </div>
 
 <div class="card">
-<h3>🎒 Hiking Tools</h3>
+<h3>🎒 Outdoorsy planners</h3>
+<p> Hiking planner, packing checklists, trip journal</p>
 </div>
 
 </div>
@@ -384,27 +313,21 @@ Hi, I'm Izabella. Here you'll find hiking adventures, via ferrata experiences, c
 
 <section class="reflection">
 
-<span class="section-label">REFLECTION JOURNAL</span>
-
-<h2>Where am I right now?</h2>
+<h2>Reflection Journal</h2>
 
 <div class="quote">
-A question. A picture. A new perspective.
+"WTF?"
 </div>
 
-<p class="reflection-text">
-Every few days, a photograph and a thought-provoking question designed to help us pause, reflect and look at life differently.
+<p style="margin-top:20px;">
+Every few days, a question, a picture and a new perspective.
 </p>
 
 </section>
 
-<section class="section">
+<section>
 
-<div class="section-header">
-<span class="section-label">REVIEWS</span>
-<h2>Thoughts & Reviews</h2>
-<p>Honest impressions, recommendations and reflections.</p>
-</div>
+<h2 class="section-title">Reviews</h2>
 
 <div class="cards">
 
@@ -414,18 +337,18 @@ Every few days, a photograph and a thought-provoking question designed to help u
 </div>
 
 <div class="card">
-<h3>🎬 Movies</h3>
-<p>What they taught me and what stayed with me.</p>
+<h3>🎬 Movies or Theatre</h3>
+<p>What stuck with me.</p>
 </div>
 
 <div class="card">
 <h3>📖 Books</h3>
-<p>Recommended reads and reflections.</p>
+<p>I mostly seek recommendations, but I like to holler my opinions anyway.</p>
 </div>
 
 <div class="card">
 <h3>📈 Trends</h3>
-<p>Thoughts on lifestyle, technology and productivity.</p>
+<p>This is the other section</p>
 </div>
 
 </div>
@@ -433,11 +356,9 @@ Every few days, a photograph and a thought-provoking question designed to help u
 </section>
 
 <footer>
-<h3>By Izabella</h3>
 
-<p>
-Outdoor adventures, practical tools, and thoughtful living.
-</p>
+<h3>By Izabella</h3>
+<p>Outdoor adventures, practical tools, and thoughtful living.</p>
 
 </footer>
 
